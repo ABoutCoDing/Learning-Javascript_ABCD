@@ -1,0 +1,21 @@
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "gulp-babel": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -10,7 +10,9 @@
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
     "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^5.0.0",
     "gulp-sourcemaps": "^2.6.4"
   },
   "scripts": {

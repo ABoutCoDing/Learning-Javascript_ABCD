@@ -18,7 +18,7 @@ const num = Number(numStr);
 // const n = b ? 1: 0;
 
 
-// // 3.19.2 문자열로 변환
+// 3.19.2 문자열로 변환
 const n = 33.5;
 n;  // 33.5 숫자
 const s = n.toString();

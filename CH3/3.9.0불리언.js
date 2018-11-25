@@ -1,2 +1,2 @@
 let heating = true;
-let colling = false;
+let cooling = false;

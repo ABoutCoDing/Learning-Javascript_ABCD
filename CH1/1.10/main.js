@@ -12,5 +12,4 @@ $(document).ready(function() {
     text.content = 'hello world';
 
     paper.view.draw();
-    
 });

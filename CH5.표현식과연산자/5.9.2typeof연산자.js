@@ -1,0 +1,8 @@
+typeof undefined            // "undefined"
+typeof null                 // "object"
+typeof {}                   // "object"
+typeof true                 // "boolean"
+typeof 1                    // "number"
+typeof ""                   // "string"
+typeof Symbol()             // "symbol"
+typeof function() {}        // "function"

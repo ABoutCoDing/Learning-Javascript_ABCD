@@ -45,15 +45,15 @@ for (let suit of ['H', 'C', 'D', 'S']) // 하트, 클로버, 다이아몬드, �
 
 
 
-// function cardToString(c) {
-//     const suits = {'H': '\u2665', 'C': '\u2663', 'D': '\u2666', 'S': '\u2660'};
-//     const values = {1: 'A', 11: 'J', 12: 'Q', 13: 'K'};
+function cardToString(c) {
+    const suits = {'H': '\u2665', 'C': '\u2663', 'D': '\u2666', 'S': '\u2660'};
+    const values = {1: 'A', 11: 'J', 12: 'Q', 13: 'K'};
 
-//     // cardToString을 호출할 때만다 매번 값을 만드는건 효율 적인 방법이 아니다.
-//     for (let i = 2; i <= 10; i++) values[i] = i;
-//     return values[c.value] + suits[c.suit];
-// }
+    // cardToString을 호출할 때만다 매번 값을 만드는건 효율 적인 방법이 아니다.
+    for (let i = 2; i <= 10; i++) values[i] = i;
+    return values[c.value] + suits[c.suit];
+}
 
-// // value가 2인 카드
-// cards.filter(c=>c.value===2).map(cardToString);                     // [ '2♥', '2♣', '2♦', '2♠' ]
-// cards.filter(c=>c.value > 10 && c.suit === 'H').map(cardToString);  // [ 'J♥', 'Q♥', 'K♥' ]  
+// value가 2인 카드
+cards.filter(c=>c.value===2).map(cardToString);                     // [ '2♥', '2♣', '2♦', '2♠' ]
+cards.filter(c=>c.value > 10 && c.suit === 'H').map(cardToString);  // [ 'J♥', 'Q♥', 'K♥' ]  

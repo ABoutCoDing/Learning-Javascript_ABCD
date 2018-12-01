@@ -1,19 +1,19 @@
-// const o = {name: "Jerry"};
-// const arr = [1, 5, "a", o, true, 5, [1, 2], "9"];
-// arr.indexOf(5);                     // 1
-// arr.lastIndexOf(5);                 // 5
-// arr.indexOf("a");                   // 2
-// arr.lastIndexOf("a");               // 2
-// arr.indexOf({name: "Jerry"});       // -1
-// arr.indexOf(o);                     // 3
-// arr.indexOf([1, 2]);                // -1
-// arr.indexOf("9");                   // 7
-// arr.indexOf(9);                     // -1
+const o = {name: "Jerry"};
+const arr = [1, 5, "a", o, true, 5, [1, 2], "9"];
+arr.indexOf(5);                     // 1
+arr.lastIndexOf(5);                 // 5
+arr.indexOf("a");                   // 2
+arr.lastIndexOf("a");               // 2
+arr.indexOf({name: "Jerry"});       // -1
+arr.indexOf(o);                     // 3
+arr.indexOf([1, 2]);                // -1
+arr.indexOf("9");                   // 7
+arr.indexOf(9);                     // -1
 
-// arr.includes("a", 5);               // -1
-// arr.indexOf(5, 5);                  // 5
-// arr.lastIndexOf(5, 4);              // 1
-// arr.lastIndexOf(true, 3);           // -1
+arr.indexOf("a", 5);                // -1
+arr.indexOf(5, 5);                  // 5
+arr.lastIndexOf(5, 4);              // 1
+arr.lastIndexOf(true, 3);           // -1
 
 
 

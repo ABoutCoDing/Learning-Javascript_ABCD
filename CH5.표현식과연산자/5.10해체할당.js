@@ -1,10 +1,10 @@
-// const obj = { b:2, c:3, d:4 };
+const obj = { b:2, c:3, d:4 };
 
-// const {a, b, c} = obj;
-// a;
-// b;
-// c;
-// // d;           // ReferenceError: d is not defined
+const {a, b, c} = obj;
+a;
+b;
+c;
+// d;           // ReferenceError: d is not defined
 
 // // // console.log(`${a}, ${b}, ${c}, ${d}`);
 // // console.log(`${a}, ${b}, ${c}`);
@@ -41,9 +41,9 @@
 
 
 
-let a = 5, b = 10;
-[a, b] = [b, a];
-a;
-b;
+// let a = 5, b = 10;
+// [a, b] = [b, a];
+// a;
+// b;
 
 // console.log(a);

@@ -51,9 +51,10 @@ const updateBruce = update.bind(bruce);
 
 updateBruce(1904, "actor");
 // bruce 는 {name: "Bruce", birthYear: 1904, occupation: "actor"}
-updateBruce(madeline, 1274, "king");
+updateBruce.call(madeline, 1274, "king");
+// console.log(bruce);
 // bruce 는 {name: "Bruce", birthYear: 1274, occupation: "king"}
-// madeline 은 변하지 않는다.
+// madeline은 변하지 않는다.
 
 // bind 함수의 동작을 영구적으로 바꾼다. 어려운 버그의 요인이 된다.
 // bind에 매개변수를 넘기면 항상 그 매개변수를 받으면서 호출받는 새 함수를 만드는 효과가 있다.

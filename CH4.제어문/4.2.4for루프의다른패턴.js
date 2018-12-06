@@ -1,5 +1,5 @@
-for (let temp, i=0, j=1; j < 30; temp = i, i = j, j = i + temp) 
-    console.log(j);
+// for (let temp, i=0, j=1; j < 30; temp = i, i = j, j = i + temp) 
+//     console.log(j);
 
 
 // for (;;) console.log("I will repeat forever!")

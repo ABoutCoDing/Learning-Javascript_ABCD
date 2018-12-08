@@ -16,7 +16,7 @@
 const f = (function() {
     let count = 0;
     return function() {
-        return `I have been called ${++count} tile(s).`;
+        return `I have been called ${++count} time(s).`;
     }
 })();
 f();

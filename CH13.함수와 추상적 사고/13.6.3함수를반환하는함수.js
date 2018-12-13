@@ -6,9 +6,9 @@ function sum(arr, f) {
 }
 
 
-// function sumOfSquares(arr) {
-//     return sum(arr, x => x*x);
-// }
+function sumOfSquares(arr) {
+    return sum(arr, x => x*x);
+}
 
 
 

@@ -4,34 +4,34 @@
 //     }
 // }
 
-// class InsurancePolicy {}
-// function makeInsurable(o) {
-//     o.addInsurancePolicy = function(p) { this.InsurancePolicy = p; }
-//     o.getInsurancePolicy = function() { return this.insurancePolicy; }
-//     o.isInsured = function() { return !!this.insurancePolicy; }
-// }
+class InsurancePolicy {}
+function makeInsurable(o) {
+    o.addInsurancePolicy = function(p) { this.InsurancePolicy = p; }
+    o.getInsurancePolicy = function() { return this.insurancePolicy; }
+    o.isInsured = function() { return !!this.insurancePolicy; }
+}
 
 
 
-// makeInsurable(Car);
+makeInsurable(Car);
 
 
 
-// const car1 = new Car();
-// car1.addInsurancePolicy(new InsurancePolicy());         // error TypeError: car1.addInsurancePolicy is not a function
+const car1 = new Car();
+car1.addInsurancePolicy(new InsurancePolicy());         // error TypeError: car1.addInsurancePolicy is not a function
 
 
 
-// const car1 = new Car();
-// makeInsurable(car1);
-// car1.addInsurancePolicy(new InsurancePolicy());      // works
+const car1 = new Car();
+makeInsurable(car1);
+car1.addInsurancePolicy(new InsurancePolicy());      // works
 
 
 
 
-// makeInsurable(Car.prototype);
-// const car1 = new Car();
-// car1.addInsurancePolicy(new InsurancePolicy());         // works
+makeInsurable(Car.prototype);
+const car1 = new Car();
+car1.addInsurancePolicy(new InsurancePolicy());         // works
 
 
 

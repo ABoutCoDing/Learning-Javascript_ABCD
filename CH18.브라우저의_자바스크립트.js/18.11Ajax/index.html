@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML</title>
+</head>
+<body>
+    <div id="content"></div>
+        <div class="serverInfo">
+            Server is running on <span data-replace="platform">???</span>
+            with Node <span data-replace="nodeVersion">???</span>. It has 
+            been up for <span data-replace="uptime">???</span> seconds.
+        </div>
+
+        <script>
+            function refreshServerInfo() {
+                const req = new XMLHttpRequest();
+                req.addEventListener('load', function() {
+                    // this.responseText는 JSON이 들어있는 문자열이다.
+                    // JSON.parse를 써서 문자열을 객체로 바꾼다.
+                    const data = JSON.parse(this.responseText);
+
+                    // 이 예제에서는 클래스가 serverInfo인 <div>의 텍스트만 교체
+                    const serverInfo = document.querySelector('.serverInfo');
+                    
+                    // 서버에서 반환한 객체를 키 기준을 순회
+                    Object.keys(data).forEach(p => {
+                        // 텍스트를 교체할 요소를 찾는다.
+                        const replacements = serverInfo.querySelectorAll(`[data-replace="${p}"]`);
+                        // 서버에서 받은 값으로 텍스트를 교체
+                        for(let r of replacements) {
+                            r.textContent = data[p];
+                        }
+                    });
+                });
+                req.open('GET', 'http://localhost:7070', true);
+                req.send();
+            }
+            refreshServerInfo();
+
+            setInterval(refreshServerInfo, 200);
+        </script>
+</body>
+</html>

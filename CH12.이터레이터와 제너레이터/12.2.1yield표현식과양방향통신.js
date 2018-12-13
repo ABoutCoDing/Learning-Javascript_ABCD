@@ -29,7 +29,6 @@ function* interrogate() {
     return `${name}'s favorite color is ${color}`;
 }
 
-
 // 3. "Ethan"을 제너레이터에 넘긴다. 제너레이터는 "What is your favorite color?"을 넘기고 일시 정지 한다.
 
 function* interrogate() {

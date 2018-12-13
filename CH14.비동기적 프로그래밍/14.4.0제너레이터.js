@@ -1,10 +1,3 @@
-// dataA = read contents of 'a.txt'
-// dataB = read contents of 'b.txt'
-// dataC = read contents of 'c.txt'
-// wait 60 seconds
-// write dataA + datB + dataC to 'd.txt'
-
-
 function nfcall(f, ...args) {
     return new Promise(function(resolve, reject) {
         f.call(null, ...args, function(err, ...args) {

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML</title>
+    <style>
+        .callout {
+            border: solid 1px #ff0080;
+            margin: 2px 4px;
+            padding: 2px 6px;
+        }
+        .code {
+            background: #ccc;
+            margin: 1px 2px;
+            padding: 1px 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Simple HTML</h1></header>
+    <div id="content"></div>
+        <p>This is a <i>simple</i> HTML file.</p>
+        <div class="callout">
+            <p>This is as fancy as we'll get!</p>
+        </div>
+        <p>IDs (such as <span class="code">#content</span>) 
+            are unique (there can only be one per page).</p>
+        <p>Classes (such as <span class="code">.callout</span>)
+            can be used on many elements.</p>
+
+
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <script>
+            $('p').text('ALL PARAGRAPHS REPLACED');
+        
+            $('p').html('<i>ALL</i> PARAGRAPHS REPLACED');
+        
+            $('p')
+                .eq(2)
+                .html('<i>THIRD</i> PARAGRAPH REPLACED');
+            
+            $('p').remove();
+        
+            $('p').append('<sup>*</sup>');
+        
+        
+            $('p').after('<hr>').before('<hr>');
+        
+            $('<sup>*</sup>').appendTo('p');        // $('p').append('<sup>*</sup>')
+            $('<hr>').insertBefore('p');            // $('p').before('<hr>')
+            $('<hr>').insertAfter('p');             // $('p').after('<hr>')
+        
+            $('p:odd').css('color', 'red');
+        
+            $('p')
+                .after('<hr>')
+                .append('<sup>*</sup>')
+                .filter(':odd')
+                .css('color', 'red');
+        
+            $('p')
+                .after('<hr>')
+                .not('.highlight')
+                .css('margin-left', '20px');
+        
+            $('p')
+                .before('<hr>')
+                .find('.code')
+                .css('font-size', '30px');
+        </script>
+</body>
+</html>
+

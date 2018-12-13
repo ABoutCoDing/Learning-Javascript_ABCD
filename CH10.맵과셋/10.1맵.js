@@ -65,12 +65,12 @@ userRoles.set(u3, 'Admin');
 //     console.log(`${u.name}: ${r}`);
 
 
-// [...userRoles.values()]; // [ 'Admin', 'User', 'Admin' ]
+[...userRoles.values()]; // [ 'Admin', 'User', 'Admin' ]
 
 
-// userRoles.delete(u2);
-// userRoles.size;         // 2
+userRoles.delete(u2);
+userRoles.size;         // 2
 
 
-// userRoles.clear();
-// userRoles.size;         // 0
+userRoles.clear();
+userRoles.size;         // 0

@@ -1,9 +1,9 @@
-// const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-// let colorIndex = -1;
-// function getNextRainbowColor() {
-//     if (++colorIndex >= colors.length) colorIndex = 0;
-//     return colors[colorIndex];
-// }
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+let colorIndex = -1;
+function getNextRainbowColor() {
+    if (++colorIndex >= colors.length) colorIndex = 0;
+    return colors[colorIndex];
+}
 
 
 function isLeapYear(year) {
@@ -26,9 +26,9 @@ const getNextRainbowColor = (function() {
 
 
 
-// setInterval(function() {
-//     document.querySelector('.rainbow').style['background-color'] = getNextRainbowColor();
-// }, 500);
+setInterval(function() {
+    document.querySelector('.rainbow').style['background-color'] = getNextRainbowColor();
+}, 500);
 
 
 
@@ -46,7 +46,7 @@ function getRainbowIterator() {
 
 
 
-// const rainbowIterator = getRainbowIterator();
-// setInterval(function() {
-//     document.querySelector('.rainbow').style['background-color'] = rainbowIterator.next().value;
-// }, 500);
+const rainbowIterator = getRainbowIterator();
+setInterval(function() {
+    document.querySelector('.rainbow').style['background-color'] = rainbowIterator.next().value;
+}, 500);

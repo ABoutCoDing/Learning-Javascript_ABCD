@@ -15,11 +15,11 @@ function addThreeSquareAddFiveTakeSquareRoot(x) {
 
 
 
-// const Money = require('math-money');
+const Money = require('math-money');
 
-// const oneDollar = Money.Dollar(1);
+const oneDollar = Money.Dollar(1);
 
-// // Money.Dollar 도 길게 느껴지면 이렇게 해도 된다.
-// const Dollar = Money.Dollar;
-// const twoDollars = Dollars(2);
-// // oneDollar와 twoDollars는 같은 타입의 인스턴스다.
+// Money.Dollar 도 길게 느껴지면 이렇게 해도 된다.
+const Dollar = Money.Dollar;
+const twoDollars = Dollars(2);
+// oneDollar와 twoDollars는 같은 타입의 인스턴스다.

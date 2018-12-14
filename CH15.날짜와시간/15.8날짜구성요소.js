@@ -1,5 +1,3 @@
-const moment = require('moment-timezone');
-
 const d = new Date(Date.UTC(1815, 9, 10));
 
 // 다음 결과는 로스엔젤레스 기준
@@ -13,7 +11,7 @@ d.getSeconds();             // 0
 d.getMilliseconds();        // 0
 
 
-// UTC 기준 메서드도 있습니다.
+// UTC 기준 메서드
 d.getUTCFullYear();         // 1815
 d.getUTCMonth();            // 9 - 10월
 d.getUTCDate();             // 10

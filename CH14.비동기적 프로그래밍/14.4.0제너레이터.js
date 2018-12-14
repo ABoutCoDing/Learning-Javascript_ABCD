@@ -35,7 +35,7 @@ function grun(g) {
 
 const fs = require('fs');
 
-function* thenFutureIsNow() {
+function* theFutureIsNow() {
     const dataA = yield nfcall(fs.readFile, 'a.txt');
     const dataB = yield nfcall(fs.readFile, 'b.txt');
     const dataC = yield nfcall(fs.readFile, 'c.txt');
@@ -43,6 +43,4 @@ function* thenFutureIsNow() {
     yield nfcall(fs.writeFile, 'd.txt', dataA+dataB+dataC);
 }
 
-
-
-grun(thenFutureIsNow);
+grun(theFutureIsNow);

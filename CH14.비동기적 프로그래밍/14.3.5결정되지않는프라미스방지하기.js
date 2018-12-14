@@ -26,7 +26,7 @@ function addTimeout(fn, timeout) {
                     clearTimeout(tid);
                     reject(...args);
                 });
-        })
+        });
     };
 }
 

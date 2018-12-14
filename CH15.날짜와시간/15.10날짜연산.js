@@ -17,12 +17,13 @@ const delta = new Date(2020, 0, 1).valueOf() - min;
 for (let i=0; i<10; i++)
     dates.push(new Date(min + delta*Math.random()));
 
-// dates 배열은 랜덤으로 만들었으므로 (아마) 뒤죽박죽일 거다.
+// dates 배열은 랜덤으로 만들었으므로 뒤죽박죽
 // 다음과 같이 역순으로 정렬할 수 있다.
 dates.sort((a, b) => b - a);
 
 // 날짜순으로 정렬할 수도 있습니다.
 dates.sort((a, b) => a-b);
+
 
 
 // Moment.js
@@ -41,3 +42,4 @@ let m = moment()
     .subtract(3, 'days')
     .endOf('month');
 // m은 이제 3일 전으로 부터 10시간 뒤인 달의 마지막 순간이다.
+// console.log(m.format("YYYY년 M월 D일 HH:mm"));

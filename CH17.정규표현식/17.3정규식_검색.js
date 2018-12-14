@@ -15,7 +15,7 @@ re.test(input);             // true (input에는 세 글자 이상으로 이루�
 
 
 // 위 예제는 모두 정규식 리터럴을 그대로 써도 된다.
-input.match(/\w{3,}/ig);
+input.match(/\w{3,}/ig); 
 input.search(/\w{3,}/ig);
 /\w{3,}/ig.test(input);     // true
 /\w{3,}/ig.exec(input);

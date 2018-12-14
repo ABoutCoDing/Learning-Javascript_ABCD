@@ -7,12 +7,12 @@ function* theFutureIsNow() {
             nfcall(fs.readFile, 'c.txt'),
         ]);
     } catch (err) {
-        console.error("Unble to read one or more input files: " + err.message);
+        console.error("Unable to read one or more input files: " + err.message);
         throw err;
     }
     yield ptimeout(60*1000);
     try {
-        yield nfcall(fa.writeFile, 'd.txt', data[0]+data[1]+dat[2]);
+        yield nfcall(fs.writeFile, 'd.txt', data[0]+data[1]+data[2]);
     } catch (err) {
         console.log("Unable to write output file: " + err.message);
         throw err;

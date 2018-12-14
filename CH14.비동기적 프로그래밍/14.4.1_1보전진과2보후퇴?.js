@@ -1,4 +1,4 @@
-function* theFutureISNow() {
+function* theFutureIsNow() {
     const data = yield Promise.all ([
         nfcall(fs.readFile, 'a.txt'),
         nfcall(fs.readFile, 'b.txt'),

@@ -34,7 +34,7 @@ setInterval(function() {
 
 
 function getRainbowIterator() {
-    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'vlolet'];
+    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
     let colorIndex = -1;
     return {
         next() {

@@ -17,7 +17,7 @@ setTimeout(function() {
 
 /*
 one started first debugger! + 0ms
-two started second debugger! + 0ms
-one after some time... + 0ms
-two what happens? + 0ms
+two started second debugger! + 3ms
+one after some time... + 206ms
+two what happens? + 1ms
 */

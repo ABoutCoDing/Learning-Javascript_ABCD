@@ -5,5 +5,6 @@ module.exports = function(prefix) {
         const now = Date.now();
         const sinceLastMessage = now - (lastMessage || now);
         console.log(`${prefix} ${message} + ${sinceLastMessage}ms`);
+        lastMessage = now;
     }
 }

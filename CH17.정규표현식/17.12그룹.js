@@ -1,7 +1,8 @@
 const text = "Visit oreilly.com today";
-const match = text.match(/[a-z]+(?:\.com|\.org||\.edu)/i);
-// [ 'Visit',
-//   index: 0,
+const match = text.match(/[a-z]+(?:\.com|\.org|\.edu)/i);
+console.log(match);
+// [ 'oreilly.com',
+//   index: 6,
 //   input: 'Visit oreilly.com today',
 //   groups: undefined ]
 
